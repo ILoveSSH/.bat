@@ -1,16 +1,4 @@
-<!doctype html>
-<html lang="en-us">
-
-<head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HTCM48SNWJ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-HTCM48SNWJ');
-    </script>
+<html lang="en-us"><head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Adcap | Hypackel</title>
@@ -19,13 +7,13 @@
 </head>
 
 <body class="template">
-    <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="100%" width="100%"></canvas>
-    <div id="loadingBox">
-        <div id="bgBar"></div>
-        <div id="progressBar"></div>
-        <p id="loadingInfo">Loading...</p>
+    <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="640" width="1024"></canvas>
+    <div id="loadingBox" style="display: none;">
+        <div id="bgBar" style="display: none;"></div>
+        <div id="progressBar" style="width: 200px; display: none;"></div>
+        <p id="loadingInfo"></p>
     </div>
-    <script type='text/javascript'>
+    <script type="text/javascript">
         // connect to canvas
         var Module = {
             TOTAL_MEMORY: 201326592,
@@ -117,9 +105,9 @@
             };
             codeXHR.send(null);
         }
-    </script>
+    </script><script src="Release/webgl.js"></script>
     <script src="97c35fd0-ea33-4844-a283-b7a4c6942643" id="c4174e706ac02e24f4101391e93a5db9"></script>
     <script src="/assets/js/main.js"></script>
-</body>
 
-</html>
+
+</body></html>
